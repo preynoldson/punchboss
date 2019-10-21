@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Places</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Places;
+		--web-view-id: Places;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Places;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#Places {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 667px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Places;
+		--web-view-id: Places;
+		--web-enable-deep-linking: true;
+	}
+	#Seats {
+		position: absolute;
+		width: 248px;
+		height: 332px;
+		left: 64px;
+		top: 119px;
+		overflow: visible;
+	}
+	.Rectangle_1177 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 20px;
+	}
+	.Rectangle_1178 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 20px;
+	}
+	.Rectangle_1180 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 20px;
+	}
+	.Rectangle_1183 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 212px;
+	}
+	.Rectangle_1184 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 212px;
+	}
+	.Rectangle_1186 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 212px;
+	}
+	.Rectangle_1189 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 116px;
+	}
+	.Rectangle_1190 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 116px;
+	}
+	.Rectangle_1192 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 116px;
+	}
+	.Rectangle_1195 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 52px;
+	}
+	.Rectangle_1196 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 52px;
+	}
+	.Rectangle_1198 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 52px;
+	}
+	.Rectangle_1201 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 244px;
+	}
+	.Rectangle_1202 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 244px;
+	}
+	.Rectangle_1204 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 244px;
+	}
+	.Rectangle_1207 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 148px;
+	}
+	.Rectangle_1208 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 276px;
+	}
+	.Rectangle_1209 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 148px;
+	}
+	.Rectangle_1210 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 276px;
+	}
+	.Rectangle_1213 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 148px;
+	}
+	.Rectangle_1214 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 276px;
+	}
+	.Rectangle_1217 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 84px;
+	}
+	.Rectangle_1218 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 84px;
+	}
+	.Rectangle_1220 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 84px;
+	}
+	.Rectangle_1223 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 180px;
+	}
+	.Rectangle_1224 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 308px;
+	}
+	.Rectangle_1225 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 180px;
+	}
+	.Rectangle_1226 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 64px;
+		top: 308px;
+	}
+	.Rectangle_1229 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 180px;
+	}
+	.Rectangle_1230 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 192px;
+		top: 308px;
+	}
+	.Rectangle_1233 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 20px;
+	}
+	.Rectangle_1235 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 20px;
+	}
+	.Rectangle_1236 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 20px;
+	}
+	.Rectangle_1239 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 212px;
+	}
+	.Rectangle_1241 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 212px;
+	}
+	.Rectangle_1242 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 212px;
+	}
+	.Rectangle_1245 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 116px;
+	}
+	.Rectangle_1247 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 116px;
+	}
+	.Rectangle_1248 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 116px;
+	}
+	.Rectangle_1251 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 52px;
+	}
+	.Rectangle_1253 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 52px;
+	}
+	.Rectangle_1254 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 52px;
+	}
+	.Rectangle_1257 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 244px;
+	}
+	.Rectangle_1259 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 244px;
+	}
+	.Rectangle_1260 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 244px;
+	}
+	.Rectangle_1263 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 148px;
+	}
+	.Rectangle_1264 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 276px;
+	}
+	.Rectangle_1267 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 148px;
+	}
+	.Rectangle_1268 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 276px;
+	}
+	.Rectangle_1269 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 148px;
+	}
+	.Rectangle_1270 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 276px;
+	}
+	.Rectangle_1273 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 84px;
+	}
+	.Rectangle_1275 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 84px;
+	}
+	.Rectangle_1276 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 84px;
+	}
+	.Rectangle_1279 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 180px;
+	}
+	.Rectangle_1280 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 32px;
+		top: 308px;
+	}
+	.Rectangle_1283 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 180px;
+	}
+	.Rectangle_1284 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 160px;
+		top: 308px;
+	}
+	.Rectangle_1285 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 180px;
+	}
+	.Rectangle_1286 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 224px;
+		top: 308px;
+	}
+	#A {
+		position: absolute;
+		left: 8px;
+		top: 0px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#ID1_2_3_4_5_6_7_8_9_10 {
+		position: absolute;
+		left: 118px;
+		top: 27px;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		line-height: 32px;
+		margin-top: -11px;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#D {
+		position: absolute;
+		left: 168px;
+		top: 0px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#B {
+		position: absolute;
+		left: 40px;
+		top: 0px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#E {
+		position: absolute;
+		left: 201px;
+		top: 0px;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#C {
+		position: absolute;
+		left: 72px;
+		top: 0px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#F {
+		position: absolute;
+		left: 233px;
+		top: 0px;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#Info {
+		position: absolute;
+		width: 111px;
+		height: 88px;
+		left: 64px;
+		top: 491px;
+		overflow: visible;
+	}
+	.Rectangle_1287 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 64px;
+	}
+	#AVAILABLE {
+		position: absolute;
+		left: 32px;
+		top: 71px;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	.Rectangle_1288 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#NOT_AVAILABLE {
+		position: absolute;
+		left: 32px;
+		top: 7px;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	.Rectangle_1289 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 32px;
+	}
+	#SELECTED {
+		position: absolute;
+		left: 32px;
+		top: 39px;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#Button {
+		position: absolute;
+		width: 375px;
+		height: 48px;
+		left: 0px;
+		top: 619px;
+		overflow: visible;
+	}
+	.Rectangle_1290 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#CONTINUE {
+		position: absolute;
+		left: 162px;
+		top: 19px;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 12px;
+		margin-top: -1px;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(255,255,255,1);
+	}
+	#Navigation_Bar {
+		position: absolute;
+		width: 375px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Rectangle_68 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	.Rectangle_69 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 48px;
+		left: 0px;
+		top: 20px;
+	}
+	#Backward_arrow {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 16px;
+		top: 36px;
+		overflow: visible;
+	}
+	.Path_10 {
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 16px;
+		height: 16px;
+		transform: rotate(180deg);
+	}
+</style>
+</head>
+<body>
+<div id="Places">
+	<div id="Seats" class="Seats">
+		<svg class="Rectangle_1177">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1177" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1178">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1178" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1180">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1180" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1183">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1183" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1184">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1184" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1186">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1186" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1189">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1189" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1190">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1190" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1192">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1192" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1195">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1195" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1196">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1196" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1198">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1198" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1201">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1201" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1202">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1202" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1204">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1204" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1207">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1207" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1208">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1208" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1209">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1209" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1210">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1210" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1213">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1213" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1214">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1214" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1217">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1217" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1218">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1218" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1220">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1220" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1223">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1223" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1224">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1224" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1225">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1225" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1226">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1226" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1229">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1229" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1230">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1230" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1233">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1233" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1235">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1235" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1236">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1236" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1239">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1239" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1241">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1241" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1242">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1242" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1245">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1245" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1247">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1247" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1248">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1248" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1251">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1251" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1253">
+			<rect fill="rgba(38,153,251,1)" id="Rectangle_1253" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1254">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1254" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1257">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1257" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1259">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1259" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1260">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1260" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1263">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1263" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1264">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1264" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1267">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1267" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1268">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1268" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1269">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1269" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1270">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1270" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1273">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1273" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1275">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1275" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1276">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1276" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1279">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1279" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1280">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1280" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1283">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1283" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1284">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1284" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1285">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1285" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="Rectangle_1286">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1286" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<div id="A">
+			<span>A</span>
+		</div>
+		<div id="ID1_2_3_4_5_6_7_8_9_10">
+			<span>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10</span>
+		</div>
+		<div id="D">
+			<span>D</span>
+		</div>
+		<div id="B">
+			<span>B</span>
+		</div>
+		<div id="E">
+			<span>E</span>
+		</div>
+		<div id="C">
+			<span>C</span>
+		</div>
+		<div id="F">
+			<span>F</span>
+		</div>
+	</div>
+	<div id="Info">
+		<svg class="Rectangle_1287">
+			<rect fill="rgba(188,224,253,1)" id="Rectangle_1287" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<div id="AVAILABLE">
+			<span>AVAILABLE</span>
+		</div>
+		<svg class="Rectangle_1288">
+			<rect fill="rgba(241,249,255,1)" id="Rectangle_1288" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<div id="NOT_AVAILABLE">
+			<span>NOT AVAILABLE</span>
+		</div>
+		<svg class="Rectangle_1289">
+			<rect fill="rgba(38,153,251,1)" id="Rectangle_1289" rx="4" ry="4" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<div id="SELECTED">
+			<span>SELECTED</span>
+		</div>
+	</div>
+	<div id="Button">
+		<svg class="Rectangle_1290">
+			<rect fill="rgba(38,153,251,1)" id="Rectangle_1290" rx="0" ry="0" x="0" y="0" width="375" height="48">
+			</rect>
+		</svg>
+		<div id="CONTINUE">
+			<span>CONTINUE</span>
+		</div>
+	</div>
+	<div id="Navigation_Bar" class="Navigation Bar">
+		<svg class="Rectangle_68">
+			<rect fill="transparent" id="Rectangle_68" rx="0" ry="0" x="0" y="0" width="375" height="20">
+			</rect>
+		</svg>
+		<svg class="Rectangle_69">
+			<rect fill="transparent" id="Rectangle_69" rx="0" ry="0" x="0" y="0" width="375" height="48">
+			</rect>
+		</svg>
+		<div id="Backward_arrow" class="Backward arrow">
+			<svg class="Path_10" viewBox="0 0 16 16">
+				<path fill="rgba(38,153,251,1)" id="Path_10" d="M 8 0 L 6.545454978942871 1.454545497894287 L 12.05194854736328 6.961039066314697 L 0 6.961039066314697 L 0 9.038961410522461 L 12.05194854736328 9.038961410522461 L 6.545454978942871 14.54545497894287 L 8 16 L 16 8 L 8 0 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+</div>
+</body>
+</html>
